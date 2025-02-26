@@ -395,26 +395,9 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">Achintya Pillai</a>
-        <p id="visitor-count">0</p>
       </div>
     </div>
-
-<script>
-    fetch('./unique_counter.php')
-        .then(response => response.text())
-        .then(data => document.getElementById('visitor-count').innerText = data);
-</script>
-<script>
-  // Retrieve stored count or set it to 0 if not found
-  let count = localStorage.getItem("visitorCount") || 0;
-  count++; // Increment count
-  localStorage.setItem("visitorCount", count); // Save updated count
-
-  // Display the count on the page
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("visitor-count").textContent = count;
-  });
-</script>
+  
   </footer>
 
   <!-- Scroll Top -->
